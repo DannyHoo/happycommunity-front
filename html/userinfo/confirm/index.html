@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>确认订单</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link href="../../../css/userinfo/confirm/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/userinfo/orders/popUP.js"></script>
+</head>
+<body style="background:#f7f7f7">
+
+<section class="aui-flexView">
+    <header class="aui-navBar aui-navBar-fixed">
+        <a href="javascript:;" class="aui-navBar-item">
+            <i class="icon icon-return"></i>
+        </a>
+        <div class="aui-center">
+            <span class="aui-center-title">确认订单</span>
+        </div>
+        <a href="javascript:;" class="aui-navBar-item">
+            <i class="icon icon-sys"></i>
+        </a>
+    </header>
+    <section class="aui-scrollView">
+        <div class="aui-order-box">
+            <div class="aui-flex aui-choice-white aui-mar15 ">
+                <div class="aui-flex-box">请选择收货地址</div>
+                北京市海淀区西二旗
+                <div class="aui-flex-triangle" style="color:#fff"><a href="javascript:;" class="aui-df-color ClickMe">修改地址</a></div>
+            </div>
+            <div class="aui-flex aui-choice-white">
+                <div class="aui-flex-box">
+                    <h1>商品清单1件</h1>
+                </div>
+            </div>
+            <div class="aui-flex aui-flex-default aui-mar15">
+                <div class="aui-flex-goods">
+                    <img src="../../../images/userinfo/confirm/goods-img.jpg" alt="">
+                </div>
+                <div class="aui-flex-box">
+                    <h2>鬼塚虎 Tiger男休闲鞋Mexico66 vin TH2J4L-0142白色+蓝色 41.5</h2>
+                    <p>尺码：43</p>
+                    <div class="aui-flex aui-flex-clear">
+                        <div class="aui-flex-box">￥499.00</div>
+                        <div>x1</div>
+                    </div>
+                </div>
+            </div>
+            <div class="aui-flex aui-choice-white b-line">
+                <div class="aui-flex-box">配送方式</div>
+                <div class="aui-flex-triangle">普通快递</div>
+            </div>
+            <div class="aui-flex aui-choice-white b-line">
+                <div class="aui-flex-box">优惠券</div>
+                <div class="aui-flex-triangle">无可用</div>
+            </div>
+            <div class="aui-flex aui-choice-white  aui-mar15">
+                <div class="aui-flex-box">发票信息</div>
+                <div class="aui-flex-triangle">不可开发票</div>
+            </div>
+            <div class="aui-flex aui-choice-white ">
+                <div class="aui-flex-box">
+                    <h2>商品总价</h2>
+                    <h3>运费总额</h3>
+                    <p>年度消费满2000元,订单满99元包邮。您已消费38900元</p>
+                </div>
+                <div class="aui-flex-triangle aui-flex-triangle-clear">
+                    <h4>￥499.99</h4>
+                    <p>+￥10元</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="aui-bar-footer">
+        <div class="aui-flex">
+            <div class="aui-flex-box">
+                应付金额：<em>￥499.00</em>
+            </div>
+            <div class="aui-btn-button">
+                <button>去支付</button>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<!-- 弹框 -->
+<div>
+    <div id="aui-mask-box" style="display: none;"></div>
+    <div id="aui-dialog-box" style="position: absolute; top: 305.478px; left: 207px; display: none;">
+        <h3 class="aui-dialog-title">请选择取消订单的理由</h3>
+        <label class="cell-item">
+            <label class="cell-right">
+                <input type="radio" value="2" name="checkbox">
+                <i class="cell-checkbox-icon"></i>
+            </label>
+            <span class="cell-left">收货人信息有误</span>
+        </label>
+        <label class="cell-item">
+            <label class="cell-right">
+                <input type="radio" value="2" name="checkbox">
+                <i class="cell-checkbox-icon"></i>
+            </label>
+            <span class="cell-left">商品数量或款式需调整</span>
+        </label>
+        <label class="cell-item">
+            <label class="cell-right">
+                <input type="radio" value="2" name="checkbox">
+                <i class="cell-checkbox-icon"></i>
+            </label>
+            <span class="cell-left">有更优惠的购买方案</span>
+        </label>
+        <label class="cell-item">
+            <label class="cell-right">
+                <input type="radio" value="2" name="checkbox">
+                <i class="cell-checkbox-icon"></i>
+            </label>
+            <span class="cell-left">商品缺货</span>
+        </label>
+        <label class="cell-item">
+            <label class="cell-right">
+                <input type="radio" value="2" name="checkbox">
+                <i class="cell-checkbox-icon"></i>
+            </label>
+            <span class="cell-left">我不想买了</span>
+        </label>
+        <label class="cell-item">
+            <label class="cell-right">
+                <input type="radio" value="2" name="checkbox">
+                <i class="cell-checkbox-icon"></i>
+            </label>
+            <span class="cell-left">其他原因</span>
+        </label>
+
+        <div class="close1">
+            <a href="javascript:void(0)" class="aui-close">取消</a>
+            <a href="javascript:void(0)" class="aui-close">确认</a>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

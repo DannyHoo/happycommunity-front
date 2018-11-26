@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="bookmark" href="/images/favicon.ico" type="image/x-icon"　/>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <title>HappyCommunity</title>
+</head>
+<body>
+<div class="wrap" style="padding-bottom:60px">
+
+
+    <div id="main_containt"></div>
+
+    <!--导航栏-->
+
+
+
+    <!--导航栏-->
+    <div class="footer">
+        <ul>
+            <li id="li_portal"><a href="javascript:toPortal();"><p><i class="icons"></i></p><h4>首页</h4></a></li>
+            <li id="li_activities"><a href="javascript:toActivities();"><p><i class="icons"></i></p><h4>活动</h4></a></li>
+            <li id="li_cart"><a href="javascript:toCart();"><p><i class="icons"></i></p><h4>购物车</h4></a></li>
+            <li id="li_userinfo" class="active"><a href="javascript:toUserinfo();"><p><i class="icons"></i></p><h4>我的</h4></a></li>
+        </ul>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="plugins/jquery/jquery-1.7.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#main_containt').load('/html/portal/index.html');
+        $('#li_portal').attr("class","active");
+        $('#li_activities').attr("class","");
+        $('#li_cart').attr("class","");
+        $('#li_userinfo').attr("class","");
+    })
+
+    function toPortal() {
+        $('#main_containt').load('/html/portal/index.html');
+        $('#li_portal').attr("class","active");
+        $('#li_activities').attr("class","");
+        $('#li_cart').attr("class","");
+        $('#li_userinfo').attr("class","");
+    }
+
+    function toActivities() {
+        $('#main_containt').load('/html/activities/index.html');
+        $('#li_portal').attr("class","");
+        $('#li_activities').attr("class","active");
+        $('#li_cart').attr("class","");
+        $('#li_userinfo').attr("class","");
+    }
+
+    function toCart() {
+        $('#main_containt').load('/html/cart/index.html');
+        $('#li_portal').attr("class","");
+        $('#li_activities').attr("class","");
+        $('#li_cart').attr("class","active");
+        $('#li_userinfo').attr("class","");
+    }
+
+    function toUserinfo() {
+        $('#main_containt').load('/html/userinfo/index.html');
+        $('#li_portal').attr("class","");
+        $('#li_activities').attr("class","");
+        $('#li_cart').attr("class","");
+        $('#li_userinfo').attr("class","active");
+    }
+
+
+</script>
+</body>
+</html>
