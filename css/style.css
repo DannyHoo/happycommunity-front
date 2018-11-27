@@ -14,7 +14,7 @@
 .login-form li div input{border:none;border-bottom:1px solid #ddd;background:none;height:20px;line-height:20px;font-size:14px;padding:10px 0;width:100%;text-indent:40px}
 .login-form li.active div input{border-bottom:1px solid #be3233}
 .login-form li.active label{color:#000}
-.login-form li a.hqyzm{position:absolute;right:5px;top:10px;height:color:#666;font-size:14px}
+/*.login-form li a.hqyzm{position:absolute;right:5px;top:10px;height:color:#666;font-size:14px}*/
 .login-form li a.hqyzming{color:#be3233}
 
 .log{width:84%;margin:50px auto 20px}
